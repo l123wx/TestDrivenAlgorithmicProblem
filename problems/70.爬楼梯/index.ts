@@ -51,7 +51,16 @@
 
 // @lc code=start
 export function climbStairs(n: number): number {
-    return n
+    // 通过观察测试用例，发现是指数函数的形式，然后用前面的几个坐标点把这个函数表达式拟合出来了
+    // 结果发现后面有个用例通过不了
+    // if (n > 3) {
+    //     return Math.round(0.7207 * Math.E ** (0.4817 * n))
+    // }
+    // return n
+    if (n === 0) return 0
+    const sqrt_5 = Math.sqrt(5)
+    const fib_n = Math.pow((1 + sqrt_5) / 2, n + 1) - Math.pow((1 - sqrt_5) / 2, n + 1)
+    return Math.round(fib_n / sqrt_5)
 }
 // @lc code=end
 
