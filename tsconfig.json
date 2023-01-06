@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "target": "ESNext"
     },
     "include": [
         "**/*.ts",
