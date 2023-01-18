@@ -31,3 +31,17 @@ const handleMod357 = (digit: number): string => {
     }
     return result
 }
+
+const handleMod357New = (digit: number): string => {
+    let result = ''
+    if (digit % 3 === 0) {
+        result += 'Fizz'
+    }
+    if (digit % 5 === 0) {
+        result += 'Buzz'
+    }
+    if (digit % 7 === 0) {
+        result += 'Whizz'
+    }
+    return result
+}
