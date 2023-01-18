@@ -5,5 +5,8 @@ export const fizzBuzzGame = (args: number[]) => {
 }
 
 export const handleSingleDigit = (digit: number): string => {
+    if (digit % 3 === 0) {
+        return 'Fizz'
+    }
     return String(digit)
 }
