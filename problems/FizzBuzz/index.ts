@@ -8,6 +8,9 @@ export const handleSingleDigit = (digit: number): string => {
     if (digit % 3 === 0 && digit % 5 === 0) {
         return 'FizzBuzz'
     }
+    if (digit % 3 === 0 && digit % 7 === 0) {
+        return 'FizzWhizz'
+    }
     if (digit % 3 === 0) {
         return 'Fizz'
     }
