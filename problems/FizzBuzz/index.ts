@@ -3,3 +3,7 @@
 export const fizzBuzzGame = (args: number[]) => {
 
 }
+
+export const handleSingleDigit = (digit: number): string => {
+    return String(digit)
+}
