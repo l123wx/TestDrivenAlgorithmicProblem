@@ -5,6 +5,9 @@ export const fizzBuzzGame = (args: number[]) => {
 }
 
 export const handleSingleDigit = (digit: number): string => {
+    if (digit % 3 === 0 && digit % 5 === 0 && digit % 7 === 0) {
+        return 'FizzBuzzWhizz'
+    }
     if (digit % 3 === 0 && digit % 5 === 0) {
         return 'FizzBuzz'
     }
