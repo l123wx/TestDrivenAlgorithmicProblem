@@ -49,3 +49,10 @@ describe('ignore rule about contain 3 and divided by 3 given input contain 5', (
         expect(handleSingleDigit(35)).toBe('BuzzWhizz')
     })
 })
+
+
+describe('ignore rule about contain 5 ignore divided by 3 and divided by 5 given input contain 7', () => {
+    it('should return Fizz given input 75', () => {
+        expect(handleSingleDigit(75)).toBe('Fizz')
+    })
+})
