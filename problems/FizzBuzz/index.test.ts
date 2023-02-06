@@ -44,6 +44,8 @@ it('should return Fizz given input contain 3 and can be divided by 7', () => {
     expect(handleSingleDigit(63)).toBe('Fizz')
 })
 
-it('should return Fizz given input contain 3 and can be divided by 5 and 7', () => {
-    expect(handleSingleDigit(35)).toBe('Fizz')
+describe('ignore rule about contain 3 and divided by 3 given input contain 5', () => {
+    it('should return BuzzWhizz given input contain 3 and 5', () => {
+        expect(handleSingleDigit(35)).toBe('BuzzWhizz')
+    })
 })
