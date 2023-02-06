@@ -13,6 +13,10 @@ export const handleSingleDigit = (digit: number): string => {
 }
 
 const handleMod357 = (digit: number): string => {
+    if (String(digit).includes('3')) {
+        return 'Fizz'
+    }
+
     let result = ''
     if (digit % 3 === 0) {
         result += 'Fizz'
