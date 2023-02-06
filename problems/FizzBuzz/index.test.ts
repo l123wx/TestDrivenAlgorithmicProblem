@@ -13,7 +13,7 @@ it('should return Buzz given input can be divided by 5', () => {
 })
 
 it('should return FizzBuzz given input can be divided by 3 and 5', () => {
-    expect(handleSingleDigit(15)).toBe('FizzBuzz')
+    expect(handleSingleDigit(60)).toBe('FizzBuzz')
 })
 
 it('should return Whizz given input can be divided by 7', () => {
@@ -29,7 +29,7 @@ it('should return BuzzWhizz given input can be divided by 5 and 7', () => {
 })
 
 it('should return FizzBuzzWhizz given input can be divided by 3, 5 and 7', () => {
-    expect(handleSingleDigit(105)).toBe('FizzBuzzWhizz')
+    expect(handleSingleDigit(210)).toBe('FizzBuzzWhizz')
 })
 
 it('should return Fizz given input contain 3', () => {
@@ -45,7 +45,7 @@ it('should return Fizz given input contain 3 and can be divided by 7', () => {
 })
 
 describe('ignore rule about contain 3 and divided by 3 given input contain 5', () => {
-    it('should return BuzzWhizz given input contain 3 and 5', () => {
+    it('should return BuzzWhizz given input 35', () => {
         expect(handleSingleDigit(35)).toBe('BuzzWhizz')
     })
 })
