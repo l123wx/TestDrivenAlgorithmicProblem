@@ -13,15 +13,20 @@ export const handleSingleDigit = (digit: number): string => {
 }
 
 const handleMod357 = (digit: number): string => {
-    if (String(digit).includes('3')) {
+    const digitString = String(digit)
+    const isInclude3 = digitString.includes('3')
+    const isInclude5 = digitString.includes('5')
+    const isInclude7 = digitString.includes('7')
+
+    if (isInclude3 && !isInclude5) {
         return 'Fizz'
     }
 
     let result = ''
-    if (digit % 3 === 0) {
+    if (digit % 3 === 0 && (!isInclude5 || isInclude7)) {
         result += 'Fizz'
     }
-    if (digit % 5 === 0) {
+    if (digit % 5 === 0 && !isInclude7) {
         result += 'Buzz'
     }
     if (digit % 7 === 0) {
