@@ -25,7 +25,7 @@ it('should return FizzWhizz given input can be divided by 3 and 7', () => {
 })
 
 it('should return BuzzWhizz given input can be divided by 5 and 7', () => {
-    expect(handleSingleDigit(70)).toBe('BuzzWhizz')
+    expect(handleSingleDigit(140)).toBe('BuzzWhizz')
 })
 
 it('should return FizzBuzzWhizz given input can be divided by 3, 5 and 7', () => {
